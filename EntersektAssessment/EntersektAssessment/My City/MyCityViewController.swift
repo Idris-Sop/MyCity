@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  MyCityViewController.swift
 //  EntersektAssessment
 //
 //  Created by Idris SOP on 2019/02/07.
@@ -9,16 +9,14 @@
 import UIKit
 import CitySDK
 
-class ViewController: UIViewController {
+class MyCityViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         let test = CityTest()
-        test.testServiceCall()
+        test.fetchAllCities()
         
     }
-
-
 }
 

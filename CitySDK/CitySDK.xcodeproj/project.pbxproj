@@ -7,10 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D663401C220DD26B001C9399 /* CityResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D663401B220DD26B001C9399 /* CityResponseModel.swift */; };
+		D663401F220DD27D001C9399 /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D663401E220DD27D001C9399 /* CacheManager.swift */; };
+		D6634023220DD287001C9399 /* CityInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6634020220DD287001C9399 /* CityInteractor.swift */; };
+		D6634024220DD287001C9399 /* CityBoundary.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6634021220DD287001C9399 /* CityBoundary.swift */; };
+		D6634025220DD287001C9399 /* CacheDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6634022220DD287001C9399 /* CacheDecorator.swift */; };
+		D663402A220DD2D5001C9399 /* WebServicesManagerInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6634028220DD2D5001C9399 /* WebServicesManagerInterface.swift */; };
+		D663402B220DD2D5001C9399 /* WebServicesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6634029220DD2D5001C9399 /* WebServicesManager.swift */; };
 		D69685EF220CABE600B1C1C0 /* CitySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D69685E5220CABE600B1C1C0 /* CitySDK.framework */; };
 		D69685F4220CABE600B1C1C0 /* CitySDKTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69685F3220CABE600B1C1C0 /* CitySDKTests.swift */; };
 		D69685F6220CABE600B1C1C0 /* CitySDK.h in Headers */ = {isa = PBXBuildFile; fileRef = D69685E8220CABE600B1C1C0 /* CitySDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D6968602220CACB000B1C1C0 /* WebServicesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6968601220CACB000B1C1C0 /* WebServicesManager.swift */; };
 		D696864D220CB4B100B1C1C0 /* Gateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = D696864C220CB4B100B1C1C0 /* Gateway.swift */; };
 		D696864F220CCBB800B1C1C0 /* CityTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D696864E220CCBB800B1C1C0 /* CityTest.swift */; };
 /* End PBXBuildFile section */
@@ -26,13 +32,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D663401B220DD26B001C9399 /* CityResponseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityResponseModel.swift; sourceTree = "<group>"; };
+		D663401E220DD27D001C9399 /* CacheManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
+		D6634020220DD287001C9399 /* CityInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityInteractor.swift; sourceTree = "<group>"; };
+		D6634021220DD287001C9399 /* CityBoundary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityBoundary.swift; sourceTree = "<group>"; };
+		D6634022220DD287001C9399 /* CacheDecorator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CacheDecorator.swift; sourceTree = "<group>"; };
+		D6634028220DD2D5001C9399 /* WebServicesManagerInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebServicesManagerInterface.swift; sourceTree = "<group>"; };
+		D6634029220DD2D5001C9399 /* WebServicesManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebServicesManager.swift; sourceTree = "<group>"; };
 		D69685E5220CABE600B1C1C0 /* CitySDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CitySDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D69685E8220CABE600B1C1C0 /* CitySDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CitySDK.h; sourceTree = "<group>"; };
 		D69685E9220CABE600B1C1C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D69685EE220CABE600B1C1C0 /* CitySDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CitySDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D69685F3220CABE600B1C1C0 /* CitySDKTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitySDKTests.swift; sourceTree = "<group>"; };
 		D69685F5220CABE600B1C1C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D6968601220CACB000B1C1C0 /* WebServicesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServicesManager.swift; sourceTree = "<group>"; };
 		D696864C220CB4B100B1C1C0 /* Gateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gateway.swift; sourceTree = "<group>"; };
 		D696864E220CCBB800B1C1C0 /* CityTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -56,6 +68,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D663401A220DD258001C9399 /* Interacor */ = {
+			isa = PBXGroup;
+			children = (
+				D663401D220DD26F001C9399 /* Cache */,
+				D663401B220DD26B001C9399 /* CityResponseModel.swift */,
+				D6634022220DD287001C9399 /* CacheDecorator.swift */,
+				D6634021220DD287001C9399 /* CityBoundary.swift */,
+				D6634020220DD287001C9399 /* CityInteractor.swift */,
+			);
+			path = Interacor;
+			sourceTree = "<group>";
+		};
+		D663401D220DD26F001C9399 /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+				D663401E220DD27D001C9399 /* CacheManager.swift */,
+			);
+			path = Cache;
+			sourceTree = "<group>";
+		};
+		D6634026220DD2AC001C9399 /* Gateway */ = {
+			isa = PBXGroup;
+			children = (
+				D696864C220CB4B100B1C1C0 /* Gateway.swift */,
+			);
+			path = Gateway;
+			sourceTree = "<group>";
+		};
+		D6634027220DD2BC001C9399 /* WebServiceManager */ = {
+			isa = PBXGroup;
+			children = (
+				D6634029220DD2D5001C9399 /* WebServicesManager.swift */,
+				D6634028220DD2D5001C9399 /* WebServicesManagerInterface.swift */,
+			);
+			path = WebServiceManager;
+			sourceTree = "<group>";
+		};
 		D69685DB220CABE600B1C1C0 = {
 			isa = PBXGroup;
 			children = (
@@ -77,6 +126,7 @@
 		D69685E7220CABE600B1C1C0 /* CitySDK */ = {
 			isa = PBXGroup;
 			children = (
+				D663401A220DD258001C9399 /* Interacor */,
 				D6968600220CAC6400B1C1C0 /* Network Stack */,
 				D69685E8220CABE600B1C1C0 /* CitySDK.h */,
 				D69685E9220CABE600B1C1C0 /* Info.plist */,
@@ -97,8 +147,8 @@
 		D6968600220CAC6400B1C1C0 /* Network Stack */ = {
 			isa = PBXGroup;
 			children = (
-				D6968601220CACB000B1C1C0 /* WebServicesManager.swift */,
-				D696864C220CB4B100B1C1C0 /* Gateway.swift */,
+				D6634026220DD2AC001C9399 /* Gateway */,
+				D6634027220DD2BC001C9399 /* WebServiceManager */,
 			);
 			path = "Network Stack";
 			sourceTree = "<group>";
@@ -212,9 +262,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D663402B220DD2D5001C9399 /* WebServicesManager.swift in Sources */,
 				D696864D220CB4B100B1C1C0 /* Gateway.swift in Sources */,
+				D6634023220DD287001C9399 /* CityInteractor.swift in Sources */,
+				D6634024220DD287001C9399 /* CityBoundary.swift in Sources */,
+				D663401F220DD27D001C9399 /* CacheManager.swift in Sources */,
 				D696864F220CCBB800B1C1C0 /* CityTest.swift in Sources */,
-				D6968602220CACB000B1C1C0 /* WebServicesManager.swift in Sources */,
+				D6634025220DD287001C9399 /* CacheDecorator.swift in Sources */,
+				D663402A220DD2D5001C9399 /* WebServicesManagerInterface.swift in Sources */,
+				D663401C220DD26B001C9399 /* CityResponseModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

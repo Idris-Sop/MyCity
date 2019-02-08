@@ -1,19 +1,20 @@
 //
-//  Gateway.swift
+//  WebServicesManagerInterface.swift
 //  CitySDK
 //
-//  Created by Idris SOP on 2019/02/07.
+//  Created by Idris Sop on 2019/02/08.
 //  Copyright © 2019 Idris SOP. All rights reserved.
 //
 
 import UIKit
 
-typealias WebServiceManagerSuccessBlock = (_ success: NSData, _ responseCode: Int) -> Void
+typealias WebServiceManagerSuccessBlock = (_ data: NSData) -> Void
 typealias WebServiceManagerFailureBlock = (_ error: NSError) -> Void
 
-protocol Gateway {
+protocol WebServicesManagerInterface {
+
     func performServerOperationWithURLRequest(with stringURL: String,
-                                              bodyRequestParameter: [String: Any],
+                                              bodyRequestParameter: [String: Any]?,
                                               httpMethod: String,
                                               success: @escaping WebServiceManagerSuccessBlock,
                                               failure: @escaping WebServiceManagerFailureBlock)
