@@ -7,16 +7,13 @@
 //
 
 import UIKit
-import CitySDK
+
 
 class MyCityViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        let test = CityTest()
-        test.fetchAllCities()
-        
+        self.navigationController?.isNavigationBarHidden = true
     }
 }
 

@@ -20,10 +20,10 @@ class CityInteractor: CityBoundary {
                                                                 do {
                                                                     let jsonResponse = try JSONSerialization.jsonObject(with: data as Data, options: []) as! [String: Any]
                                                                     print(jsonResponse)
-                                                                    var cityList = [CityResponseModel]()
+                                                                    var cityList = [CityModel]()
                                                                     if let cityArray = jsonResponse["cities"] as? Array<Any> {
                                                                         for (_, city) in ((cityArray).enumerated()) {
-                                                                            let cityResponseModel = CityResponseModel(dictionary: city as! [String : Any])
+                                                                            let cityResponseModel = CityModel(dictionary: city as! [String : Any])
                                                                             cityList.append(cityResponseModel)
                                                                         }
                                                                     }

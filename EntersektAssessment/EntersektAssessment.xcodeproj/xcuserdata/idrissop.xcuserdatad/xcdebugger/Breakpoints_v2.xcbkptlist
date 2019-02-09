@@ -22,16 +22,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "../CitySDK/CitySDK/CityTest.swift"
-            timestampString = "571331989.76686"
+            filePath = "EntersektAssessment/My City/City/View Model/CityViewModel.swift"
+            timestampString = "571418389.506253"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "16"
-            endingLineNumber = "16"
-            landmarkName = "fetchAllCities()"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "retreiveCitiesFromCitySDK()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

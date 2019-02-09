@@ -16,6 +16,10 @@
 		D6968630220CAD1B00B1C1C0 /* EntersektAssessmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D696862F220CAD1B00B1C1C0 /* EntersektAssessmentUITests.swift */; };
 		D6968646220CAD3E00B1C1C0 /* CitySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6968643220CAD3500B1C1C0 /* CitySDK.framework */; };
 		D6968647220CAD3E00B1C1C0 /* CitySDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D6968643220CAD3500B1C1C0 /* CitySDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D69686D4220EFED400B1C1C0 /* CityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69686D3220EFED400B1C1C0 /* CityViewController.swift */; };
+		D69686D6220EFEE700B1C1C0 /* CityScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D69686D5220EFEE700B1C1C0 /* CityScreen.storyboard */; };
+		D69686D8220EFF3F00B1C1C0 /* CityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69686D7220EFF3F00B1C1C0 /* CityViewModel.swift */; };
+		D69686DA220EFF6F00B1C1C0 /* CityViewModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69686D9220EFF6E00B1C1C0 /* CityViewModelDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +89,11 @@
 		D696862F220CAD1B00B1C1C0 /* EntersektAssessmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntersektAssessmentUITests.swift; sourceTree = "<group>"; };
 		D6968631220CAD1B00B1C1C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D696863D220CAD3400B1C1C0 /* CitySDK.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CitySDK.xcodeproj; path = ../CitySDK/CitySDK.xcodeproj; sourceTree = "<group>"; };
+		D69686D3220EFED400B1C1C0 /* CityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityViewController.swift; sourceTree = "<group>"; };
+		D69686D5220EFEE700B1C1C0 /* CityScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CityScreen.storyboard; sourceTree = "<group>"; };
+		D69686D7220EFF3F00B1C1C0 /* CityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityViewModel.swift; sourceTree = "<group>"; };
+		D69686D9220EFF6E00B1C1C0 /* CityViewModelDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityViewModelDelegate.swift; sourceTree = "<group>"; };
+		D69686DD220F011A00B1C1C0 /* EntersektAssessment-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EntersektAssessment-Prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,18 +125,11 @@
 		D663402D220DD653001C9399 /* My City */ = {
 			isa = PBXGroup;
 			children = (
-				D663402E220DD66E001C9399 /* View Model */,
+				D69686CF220EFEAA00B1C1C0 /* City */,
 				D6968611220CAD1A00B1C1C0 /* MyCityViewController.swift */,
 				D6968613220CAD1A00B1C1C0 /* MyCityScreen.storyboard */,
 			);
 			path = "My City";
-			sourceTree = "<group>";
-		};
-		D663402E220DD66E001C9399 /* View Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "View Model";
 			sourceTree = "<group>";
 		};
 		D6968603220CAD1A00B1C1C0 = {
@@ -155,10 +157,9 @@
 			isa = PBXGroup;
 			children = (
 				D663402D220DD653001C9399 /* My City */,
-				D696860F220CAD1A00B1C1C0 /* AppDelegate.swift */,
-				D6968616220CAD1A00B1C1C0 /* Assets.xcassets */,
-				D6968618220CAD1A00B1C1C0 /* LaunchScreen.storyboard */,
+				D69686DD220F011A00B1C1C0 /* EntersektAssessment-Prefix.pch */,
 				D696861B220CAD1A00B1C1C0 /* Info.plist */,
+				D69686DB220F00C400B1C1C0 /* Supporting Files */,
 			);
 			path = EntersektAssessment;
 			sourceTree = "<group>";
@@ -188,6 +189,43 @@
 				D6968645220CAD3500B1C1C0 /* CitySDKTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		D69686CF220EFEAA00B1C1C0 /* City */ = {
+			isa = PBXGroup;
+			children = (
+				D69686D1220EFEB900B1C1C0 /* View Model */,
+				D69686D0220EFEB000B1C1C0 /* View Controller */,
+			);
+			path = City;
+			sourceTree = "<group>";
+		};
+		D69686D0220EFEB000B1C1C0 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D69686D3220EFED400B1C1C0 /* CityViewController.swift */,
+				D69686D5220EFEE700B1C1C0 /* CityScreen.storyboard */,
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
+		D69686D1220EFEB900B1C1C0 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				D69686D7220EFF3F00B1C1C0 /* CityViewModel.swift */,
+				D69686D9220EFF6E00B1C1C0 /* CityViewModelDelegate.swift */,
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		D69686DB220F00C400B1C1C0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D696860F220CAD1A00B1C1C0 /* AppDelegate.swift */,
+				D6968616220CAD1A00B1C1C0 /* Assets.xcassets */,
+				D6968618220CAD1A00B1C1C0 /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,6 +298,7 @@
 				TargetAttributes = {
 					D696860B220CAD1A00B1C1C0 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 					D696861F220CAD1B00B1C1C0 = {
 						CreatedOnToolsVersion = 10.1;
@@ -320,6 +359,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D696861A220CAD1A00B1C1C0 /* LaunchScreen.storyboard in Resources */,
+				D69686D6220EFEE700B1C1C0 /* CityScreen.storyboard in Resources */,
 				D6968617220CAD1A00B1C1C0 /* Assets.xcassets in Resources */,
 				D6968615220CAD1A00B1C1C0 /* MyCityScreen.storyboard in Resources */,
 			);
@@ -348,6 +388,9 @@
 			files = (
 				D6968612220CAD1A00B1C1C0 /* MyCityViewController.swift in Sources */,
 				D6968610220CAD1A00B1C1C0 /* AppDelegate.swift in Sources */,
+				D69686D4220EFED400B1C1C0 /* CityViewController.swift in Sources */,
+				D69686DA220EFF6F00B1C1C0 /* CityViewModelDelegate.swift in Sources */,
+				D69686D8220EFF3F00B1C1C0 /* CityViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -528,7 +571,10 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/EntersektAssessment-Prefix.pch";
 				INFOPLIST_FILE = EntersektAssessment/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -536,6 +582,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.noname.EntersektAssessment;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -546,7 +594,10 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/EntersektAssessment-Prefix.pch";
 				INFOPLIST_FILE = EntersektAssessment/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -554,6 +605,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.noname.EntersektAssessment;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

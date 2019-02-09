@@ -10,13 +10,13 @@ import UIKit
 
 class CacheManager {
     static let sharedInstance = CacheManager()
-    private var cachedCityList: [CityResponseModel]?
+    private var cachedCityList: [CityModel]?
     
-    func setCacheCity(_ cityToCache: [CityResponseModel]) {
+    func setCacheCity(_ cityToCache: [CityModel]) {
         cachedCityList = cityToCache
     }
     
-    func retreiveCachedCity() -> [CityResponseModel]? {
+    func retreiveCachedCity() -> [CityModel]? {
         return cachedCityList
     }
 }

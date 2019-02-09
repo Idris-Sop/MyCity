@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D663401C220DD26B001C9399 /* CityResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D663401B220DD26B001C9399 /* CityResponseModel.swift */; };
+		D663401C220DD26B001C9399 /* CityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D663401B220DD26B001C9399 /* CityModel.swift */; };
 		D663401F220DD27D001C9399 /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D663401E220DD27D001C9399 /* CacheManager.swift */; };
 		D6634023220DD287001C9399 /* CityInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6634020220DD287001C9399 /* CityInteractor.swift */; };
 		D6634024220DD287001C9399 /* CityBoundary.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6634021220DD287001C9399 /* CityBoundary.swift */; };
@@ -16,9 +16,11 @@
 		D663402B220DD2D5001C9399 /* WebServicesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6634029220DD2D5001C9399 /* WebServicesManager.swift */; };
 		D69685EF220CABE600B1C1C0 /* CitySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D69685E5220CABE600B1C1C0 /* CitySDK.framework */; };
 		D69685F4220CABE600B1C1C0 /* CitySDKTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69685F3220CABE600B1C1C0 /* CitySDKTests.swift */; };
-		D69685F6220CABE600B1C1C0 /* CitySDK.h in Headers */ = {isa = PBXBuildFile; fileRef = D69685E8220CABE600B1C1C0 /* CitySDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D696864D220CB4B100B1C1C0 /* Gateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = D696864C220CB4B100B1C1C0 /* Gateway.swift */; };
-		D696864F220CCBB800B1C1C0 /* CityTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D696864E220CCBB800B1C1C0 /* CityTest.swift */; };
+		D696864F220CCBB800B1C1C0 /* CitySDKManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D696864E220CCBB800B1C1C0 /* CitySDKManager.swift */; };
+		D696865F220E0BC500B1C1C0 /* MallModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D696865E220E0BC500B1C1C0 /* MallModel.swift */; };
+		D6968661220E0BDD00B1C1C0 /* ShopModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6968660220E0BDD00B1C1C0 /* ShopModel.swift */; };
+		D6968669220EE46C00B1C1C0 /* CitySDK.h in Headers */ = {isa = PBXBuildFile; fileRef = D69685E8220CABE600B1C1C0 /* CitySDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,7 +34,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		D663401B220DD26B001C9399 /* CityResponseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityResponseModel.swift; sourceTree = "<group>"; };
+		D663401B220DD26B001C9399 /* CityModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityModel.swift; sourceTree = "<group>"; };
 		D663401E220DD27D001C9399 /* CacheManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
 		D6634020220DD287001C9399 /* CityInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityInteractor.swift; sourceTree = "<group>"; };
 		D6634021220DD287001C9399 /* CityBoundary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityBoundary.swift; sourceTree = "<group>"; };
@@ -46,7 +48,9 @@
 		D69685F3220CABE600B1C1C0 /* CitySDKTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitySDKTests.swift; sourceTree = "<group>"; };
 		D69685F5220CABE600B1C1C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D696864C220CB4B100B1C1C0 /* Gateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gateway.swift; sourceTree = "<group>"; };
-		D696864E220CCBB800B1C1C0 /* CityTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityTest.swift; sourceTree = "<group>"; };
+		D696864E220CCBB800B1C1C0 /* CitySDKManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitySDKManager.swift; sourceTree = "<group>"; };
+		D696865E220E0BC500B1C1C0 /* MallModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MallModel.swift; sourceTree = "<group>"; };
+		D6968660220E0BDD00B1C1C0 /* ShopModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,7 +76,6 @@
 			isa = PBXGroup;
 			children = (
 				D663401D220DD26F001C9399 /* Cache */,
-				D663401B220DD26B001C9399 /* CityResponseModel.swift */,
 				D6634022220DD287001C9399 /* CacheDecorator.swift */,
 				D6634021220DD287001C9399 /* CityBoundary.swift */,
 				D6634020220DD287001C9399 /* CityInteractor.swift */,
@@ -126,11 +129,12 @@
 		D69685E7220CABE600B1C1C0 /* CitySDK */ = {
 			isa = PBXGroup;
 			children = (
+				D6968662220E0FC100B1C1C0 /* CitySDKManager */,
+				D696865D220E09FA00B1C1C0 /* Model */,
 				D663401A220DD258001C9399 /* Interacor */,
 				D6968600220CAC6400B1C1C0 /* Network Stack */,
 				D69685E8220CABE600B1C1C0 /* CitySDK.h */,
 				D69685E9220CABE600B1C1C0 /* Info.plist */,
-				D696864E220CCBB800B1C1C0 /* CityTest.swift */,
 			);
 			path = CitySDK;
 			sourceTree = "<group>";
@@ -153,6 +157,24 @@
 			path = "Network Stack";
 			sourceTree = "<group>";
 		};
+		D696865D220E09FA00B1C1C0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D663401B220DD26B001C9399 /* CityModel.swift */,
+				D696865E220E0BC500B1C1C0 /* MallModel.swift */,
+				D6968660220E0BDD00B1C1C0 /* ShopModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D6968662220E0FC100B1C1C0 /* CitySDKManager */ = {
+			isa = PBXGroup;
+			children = (
+				D696864E220CCBB800B1C1C0 /* CitySDKManager.swift */,
+			);
+			path = CitySDKManager;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -160,7 +182,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D69685F6220CABE600B1C1C0 /* CitySDK.h in Headers */,
+				D6968669220EE46C00B1C1C0 /* CitySDK.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,14 +285,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				D663402B220DD2D5001C9399 /* WebServicesManager.swift in Sources */,
+				D696865F220E0BC500B1C1C0 /* MallModel.swift in Sources */,
 				D696864D220CB4B100B1C1C0 /* Gateway.swift in Sources */,
 				D6634023220DD287001C9399 /* CityInteractor.swift in Sources */,
 				D6634024220DD287001C9399 /* CityBoundary.swift in Sources */,
 				D663401F220DD27D001C9399 /* CacheManager.swift in Sources */,
-				D696864F220CCBB800B1C1C0 /* CityTest.swift in Sources */,
+				D6968661220E0BDD00B1C1C0 /* ShopModel.swift in Sources */,
+				D696864F220CCBB800B1C1C0 /* CitySDKManager.swift in Sources */,
 				D6634025220DD287001C9399 /* CacheDecorator.swift in Sources */,
 				D663402A220DD2D5001C9399 /* WebServicesManagerInterface.swift in Sources */,
-				D663401C220DD26B001C9399 /* CityResponseModel.swift in Sources */,
+				D663401C220DD26B001C9399 /* CityModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,6 +353,7 @@
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -349,8 +374,10 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_MODULE_NAME = "$(PROJECT_NAME)";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "$(PROJECT_NAME)-Swift.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -393,6 +420,7 @@
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -406,8 +434,10 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				PRODUCT_MODULE_NAME = "$(PROJECT_NAME)";
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "$(PROJECT_NAME)-Swift.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -418,6 +448,7 @@
 		D69685FA220CABE600B1C1C0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -433,8 +464,12 @@
 					"@loader_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.noname.CitySDK;
+				PRODUCT_MODULE_NAME = "$(PROJECT_NAME)";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "$(PROJECT_NAME)-Swift.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -444,6 +479,7 @@
 		D69685FB220CABE600B1C1C0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -459,8 +495,12 @@
 					"@loader_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.noname.CitySDK;
+				PRODUCT_MODULE_NAME = "$(PROJECT_NAME)";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "$(PROJECT_NAME)-Swift.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

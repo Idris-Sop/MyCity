@@ -8,7 +8,7 @@
 
 import UIKit
 
-typealias FetchCitySuccessBlock = (_ responseModel: [CityResponseModel]?) -> Void
+typealias FetchCitySuccessBlock = (_ responseModel: [CityModel]?) -> Void
 typealias FetchCityFailureBlock = (_ error: NSError) -> Void
 
 protocol CityBoundary {
