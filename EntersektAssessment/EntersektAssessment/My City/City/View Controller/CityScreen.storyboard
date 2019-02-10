@@ -36,15 +36,24 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="x3x-Jb-DEe"/>
                     </view>
-                    <navigationItem key="navigationItem" title="CIty" id="3XM-pJ-HpT"/>
+                    <navigationItem key="navigationItem" title="City" id="3XM-pJ-HpT"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <outlet property="cityTableView" destination="czL-po-Hkb" id="9y0-RQ-xYj"/>
+                        <segue destination="Y0E-R4-HHe" kind="show" identifier="MallSegueIdentifier" id="ckA-gQ-wZi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xwZ-Cm-gnR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="700" y="-293"/>
+        </scene>
+        <!--MallScreen-->
+        <scene sceneID="hX1-UD-25o">
+            <objects>
+                <viewControllerPlaceholder storyboardName="MallScreen" id="Y0E-R4-HHe" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="unb-8u-xe9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1302" y="-294"/>
         </scene>
     </scenes>
 </document>

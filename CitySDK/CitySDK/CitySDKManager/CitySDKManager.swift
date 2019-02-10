@@ -21,9 +21,9 @@ public class CitySDKManager: NSObject {
         }
     }
     
-    public func fetchAllMall(inCity cityName: String,
-                             success: @escaping ([MallModel]?) -> (),
-                             failure: @escaping (NSError) -> ()) {
+    public func fetchAllMalls(inCity cityName: String,
+                              success: @escaping ([MallModel]?) -> (),
+                              failure: @escaping (NSError) -> ()) {
         let cityCacheDecorator = CacheDecorator()
         cityCacheDecorator.fetchCities(with: { (cityResponseModel) in
             var mallList = [MallModel]()
@@ -39,10 +39,10 @@ public class CitySDKManager: NSObject {
         }
     }
     
-    public func fetchAllShop(inMall mallName: String,
-                             cityName: String,
-                             success: @escaping ([ShopModel]?) -> (),
-                             failure: @escaping (NSError) -> ()) {
+    public func fetchAllShops(inMall mallName: String,
+                              cityName: String,
+                              success: @escaping ([ShopModel]?) -> (),
+                              failure: @escaping (NSError) -> ()) {
         let cityCacheDecorator = CacheDecorator()
         cityCacheDecorator.fetchCities(with: { (cityResponseModel) in
             var shopList = [ShopModel]()
@@ -62,9 +62,9 @@ public class CitySDKManager: NSObject {
         }
     }
     
-    public func fetchAllShop(inCity cityName: String,
-                             success: @escaping ([ShopModel]?) -> (),
-                             failure: @escaping (NSError) -> ()) {
+    public func fetchAllShops(inCity cityName: String,
+                              success: @escaping ([ShopModel]?) -> (),
+                              failure: @escaping (NSError) -> ()) {
         let cityCacheDecorator = CacheDecorator()
         cityCacheDecorator.fetchCities(with: { (cityResponseModel) in
             var shopList = [ShopModel]()

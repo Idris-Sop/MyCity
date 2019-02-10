@@ -20,6 +20,17 @@
 		D69686D6220EFEE700B1C1C0 /* CityScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D69686D5220EFEE700B1C1C0 /* CityScreen.storyboard */; };
 		D69686D8220EFF3F00B1C1C0 /* CityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69686D7220EFF3F00B1C1C0 /* CityViewModel.swift */; };
 		D69686DA220EFF6F00B1C1C0 /* CityViewModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69686D9220EFF6E00B1C1C0 /* CityViewModelDelegate.swift */; };
+		D69686E422101D9A00B1C1C0 /* MallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69686E322101D9A00B1C1C0 /* MallViewController.swift */; };
+		D69686E622101DB000B1C1C0 /* MallScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D69686E522101DB000B1C1C0 /* MallScreen.storyboard */; };
+		D69686E822101DC500B1C1C0 /* MallViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69686E722101DC500B1C1C0 /* MallViewModel.swift */; };
+		D69686EC22101ED000B1C1C0 /* MallTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69686EA22101ED000B1C1C0 /* MallTableViewCell.swift */; };
+		D69686ED22101ED000B1C1C0 /* MallTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D69686EB22101ED000B1C1C0 /* MallTableViewCell.xib */; };
+		D6F37D332210360E00B35A8C /* ShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F37D322210360E00B35A8C /* ShopViewController.swift */; };
+		D6F37D352210364E00B35A8C /* ShopScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6F37D342210364E00B35A8C /* ShopScreen.storyboard */; };
+		D6F37D392210368A00B35A8C /* ShopTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F37D372210368A00B35A8C /* ShopTableViewCell.swift */; };
+		D6F37D3A2210368A00B35A8C /* ShopTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6F37D382210368A00B35A8C /* ShopTableViewCell.xib */; };
+		D6F37D3D22103DDB00B35A8C /* ShopViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F37D3C22103DDB00B35A8C /* ShopViewModel.swift */; };
+		D6F37D3F22103DED00B35A8C /* ShopViewModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F37D3E22103DED00B35A8C /* ShopViewModelDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +105,17 @@
 		D69686D7220EFF3F00B1C1C0 /* CityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityViewModel.swift; sourceTree = "<group>"; };
 		D69686D9220EFF6E00B1C1C0 /* CityViewModelDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityViewModelDelegate.swift; sourceTree = "<group>"; };
 		D69686DD220F011A00B1C1C0 /* EntersektAssessment-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EntersektAssessment-Prefix.pch"; sourceTree = "<group>"; };
+		D69686E322101D9A00B1C1C0 /* MallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MallViewController.swift; sourceTree = "<group>"; };
+		D69686E522101DB000B1C1C0 /* MallScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MallScreen.storyboard; sourceTree = "<group>"; };
+		D69686E722101DC500B1C1C0 /* MallViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MallViewModel.swift; sourceTree = "<group>"; };
+		D69686EA22101ED000B1C1C0 /* MallTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MallTableViewCell.swift; sourceTree = "<group>"; };
+		D69686EB22101ED000B1C1C0 /* MallTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MallTableViewCell.xib; sourceTree = "<group>"; };
+		D6F37D322210360E00B35A8C /* ShopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopViewController.swift; sourceTree = "<group>"; };
+		D6F37D342210364E00B35A8C /* ShopScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ShopScreen.storyboard; sourceTree = "<group>"; };
+		D6F37D372210368A00B35A8C /* ShopTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopTableViewCell.swift; sourceTree = "<group>"; };
+		D6F37D382210368A00B35A8C /* ShopTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShopTableViewCell.xib; sourceTree = "<group>"; };
+		D6F37D3C22103DDB00B35A8C /* ShopViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopViewModel.swift; sourceTree = "<group>"; };
+		D6F37D3E22103DED00B35A8C /* ShopViewModelDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopViewModelDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +147,8 @@
 		D663402D220DD653001C9399 /* My City */ = {
 			isa = PBXGroup;
 			children = (
+				D6F37D2F221034A800B35A8C /* Shop */,
+				D69686E022101D4F00B1C1C0 /* Mall */,
 				D69686CF220EFEAA00B1C1C0 /* City */,
 				D6968611220CAD1A00B1C1C0 /* MyCityViewController.swift */,
 				D6968613220CAD1A00B1C1C0 /* MyCityScreen.storyboard */,
@@ -226,6 +250,79 @@
 				D6968618220CAD1A00B1C1C0 /* LaunchScreen.storyboard */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D69686E022101D4F00B1C1C0 /* Mall */ = {
+			isa = PBXGroup;
+			children = (
+				D69686E222101D7400B1C1C0 /* View Model */,
+				D69686E122101D5900B1C1C0 /* View Controller */,
+			);
+			path = Mall;
+			sourceTree = "<group>";
+		};
+		D69686E122101D5900B1C1C0 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D69686E922101EA600B1C1C0 /* Custom TableView Cell */,
+				D69686E322101D9A00B1C1C0 /* MallViewController.swift */,
+				D69686E522101DB000B1C1C0 /* MallScreen.storyboard */,
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
+		D69686E222101D7400B1C1C0 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				D69686E722101DC500B1C1C0 /* MallViewModel.swift */,
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		D69686E922101EA600B1C1C0 /* Custom TableView Cell */ = {
+			isa = PBXGroup;
+			children = (
+				D69686EA22101ED000B1C1C0 /* MallTableViewCell.swift */,
+				D69686EB22101ED000B1C1C0 /* MallTableViewCell.xib */,
+			);
+			path = "Custom TableView Cell";
+			sourceTree = "<group>";
+		};
+		D6F37D2F221034A800B35A8C /* Shop */ = {
+			isa = PBXGroup;
+			children = (
+				D6F37D3B22103DBF00B35A8C /* View Model */,
+				D6F37D31221035AC00B35A8C /* View Controller */,
+			);
+			path = Shop;
+			sourceTree = "<group>";
+		};
+		D6F37D31221035AC00B35A8C /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D6F37D362210366B00B35A8C /* Custom TableView Cell */,
+				D6F37D322210360E00B35A8C /* ShopViewController.swift */,
+				D6F37D342210364E00B35A8C /* ShopScreen.storyboard */,
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
+		D6F37D362210366B00B35A8C /* Custom TableView Cell */ = {
+			isa = PBXGroup;
+			children = (
+				D6F37D372210368A00B35A8C /* ShopTableViewCell.swift */,
+				D6F37D382210368A00B35A8C /* ShopTableViewCell.xib */,
+			);
+			path = "Custom TableView Cell";
+			sourceTree = "<group>";
+		};
+		D6F37D3B22103DBF00B35A8C /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				D6F37D3E22103DED00B35A8C /* ShopViewModelDelegate.swift */,
+				D6F37D3C22103DDB00B35A8C /* ShopViewModel.swift */,
+			);
+			path = "View Model";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -361,7 +458,11 @@
 				D696861A220CAD1A00B1C1C0 /* LaunchScreen.storyboard in Resources */,
 				D69686D6220EFEE700B1C1C0 /* CityScreen.storyboard in Resources */,
 				D6968617220CAD1A00B1C1C0 /* Assets.xcassets in Resources */,
+				D6F37D3A2210368A00B35A8C /* ShopTableViewCell.xib in Resources */,
+				D69686ED22101ED000B1C1C0 /* MallTableViewCell.xib in Resources */,
 				D6968615220CAD1A00B1C1C0 /* MyCityScreen.storyboard in Resources */,
+				D6F37D352210364E00B35A8C /* ShopScreen.storyboard in Resources */,
+				D69686E622101DB000B1C1C0 /* MallScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -388,9 +489,16 @@
 			files = (
 				D6968612220CAD1A00B1C1C0 /* MyCityViewController.swift in Sources */,
 				D6968610220CAD1A00B1C1C0 /* AppDelegate.swift in Sources */,
+				D6F37D332210360E00B35A8C /* ShopViewController.swift in Sources */,
+				D69686E422101D9A00B1C1C0 /* MallViewController.swift in Sources */,
+				D69686EC22101ED000B1C1C0 /* MallTableViewCell.swift in Sources */,
+				D6F37D392210368A00B35A8C /* ShopTableViewCell.swift in Sources */,
+				D69686E822101DC500B1C1C0 /* MallViewModel.swift in Sources */,
 				D69686D4220EFED400B1C1C0 /* CityViewController.swift in Sources */,
 				D69686DA220EFF6F00B1C1C0 /* CityViewModelDelegate.swift in Sources */,
+				D6F37D3D22103DDB00B35A8C /* ShopViewModel.swift in Sources */,
 				D69686D8220EFF3F00B1C1C0 /* CityViewModel.swift in Sources */,
+				D6F37D3F22103DED00B35A8C /* ShopViewModelDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

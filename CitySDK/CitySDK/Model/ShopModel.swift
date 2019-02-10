@@ -11,11 +11,13 @@ import UIKit
 public class ShopModel: NSObject {
 
     public private(set) var cityId: Int?
-    public private(set) var mallId: Int?
+    public private(set) var mallName: String?
     public private(set) var shopId: Int?
     public private(set) var shopName: String?
     
-    init(dictionary: [String: Any]) {
+    init(dictionary: [String: Any],
+         mallName: String) {
+        self.mallName = mallName
         if let shopId = dictionary["id"] {
             self.shopId = shopId as? Int
         }

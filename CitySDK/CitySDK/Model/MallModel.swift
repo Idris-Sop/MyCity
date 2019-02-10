@@ -27,7 +27,7 @@ public class MallModel: NSObject {
         self.shopList = [ShopModel]()
         if let shopArray = dictionary["shops"] as? Array<Any> {
             for (_, shop) in ((shopArray).enumerated()) {
-                let shopModel = ShopModel(dictionary: shop as! [String : Any])
+                let shopModel = ShopModel(dictionary: shop as! [String : Any], mallName: self.mallName ?? "")
                 self.shopList?.append(shopModel)
             }
         }

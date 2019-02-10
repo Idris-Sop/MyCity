@@ -12,17 +12,26 @@ import CitySDK
 class CityViewController: UIViewController, CityViewModelDelegate {
     
     @IBOutlet private var cityTableView: UITableView!
+    private var selectedCityModel: CityModel?
     private lazy var viewModel = CityViewModel(with: self)
     
     override func viewDidLoad() {
         super.viewDidLoad()
-         self.navigationController?.isNavigationBarHidden = false
+        self.navigationController?.isNavigationBarHidden = false
         self.cityTableView.register(UITableViewCell.self, forCellReuseIdentifier: "CityCellIdentifier")
     }
     
     //MARK: CityViewModelDelegate
     func updateViewContent() {
         self.cityTableView.reloadData()
+    }
+    
+    // MARK: Navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "MallSegueIdentifier" {
+            let mallScreen = segue.destination as? MallViewController
+            mallScreen?.setMallList(with: self.selectedCityModel!)
+        }
     }
 }
 
@@ -46,7 +55,7 @@ extension CityViewController: UITableViewDelegate, UITableViewDataSource {
     
     //MARK: UITableViewDelegate
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let cityModel = viewModel.cities![indexPath.row]
-        print(cityModel.mallList!)
+        self.selectedCityModel = viewModel.cities![indexPath.row]
+        performSegue(withIdentifier: "MallSegueIdentifier", sender: self)
     }
 }
