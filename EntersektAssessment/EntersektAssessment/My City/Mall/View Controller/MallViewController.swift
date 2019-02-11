@@ -18,6 +18,8 @@ class MallViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //MARK: Register TableView Cell
         self.mallTableView.register(UINib(nibName: "MallTableViewCell", bundle: nil), forCellReuseIdentifier: "MallCellIdentifier")
     }
     
@@ -60,6 +62,7 @@ extension MallViewController: UITableViewDelegate, UITableViewDataSource {
         performSegue(withIdentifier: "ShopSegueIdentifer", sender: self)
     }
     
+    //MARK: UITableViewDelegate
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 80
     }

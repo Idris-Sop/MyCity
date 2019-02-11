@@ -14,8 +14,10 @@ class Gateway: NSObject {
     
     private var session = URLSession()
     
-    override init(){
+    override init() {
         super.init()
+        
+        //MARK: Instantiate Session Configuration
         let sessionConfiguration = URLSessionConfiguration.default
         let operationQueue = OperationQueue.main
         sessionConfiguration.httpMaximumConnectionsPerHost = 5
@@ -25,6 +27,7 @@ class Gateway: NSObject {
         self.session = URLSession(configuration: sessionConfiguration, delegate: self, delegateQueue: operationQueue)
     }
     
+    //MARK: Execute HTTP Communication with Server
     func executeServerCommunicationWithURLRequest(with requestURL: URLRequest,
                                                   callBack: @escaping GatewayCompletionBlock) {
         let dataTask = session.dataTask(with: requestURL) { (data, responseURL, error) in

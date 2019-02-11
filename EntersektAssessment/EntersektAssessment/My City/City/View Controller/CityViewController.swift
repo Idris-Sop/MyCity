@@ -18,12 +18,22 @@ class CityViewController: UIViewController, CityViewModelDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.isNavigationBarHidden = false
+        
+        //MARK: Register TableView Cell
         self.cityTableView.register(UITableViewCell.self, forCellReuseIdentifier: "CityCellIdentifier")
     }
     
     //MARK: CityViewModelDelegate
     func updateViewContent() {
         self.cityTableView.reloadData()
+    }
+    
+    // MARK: ShopViewModelDelegate
+    func showErrorMessage(with message: String) {
+        let alertViewController = UIAlertController(title: "Error", message: message, preferredStyle: .alert)
+        let actionButton = UIAlertAction(title: "Ok", style: .cancel, handler: nil)
+        alertViewController.addAction(actionButton)
+        self.present(alertViewController, animated: true, completion: nil)
     }
     
     // MARK: Navigation

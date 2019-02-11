@@ -10,7 +10,7 @@ import UIKit
 
 class WebServicesManager: NSObject, WebServicesManagerInterface {
 
-    
+    //MARK: Perform API Call
     func performServerOperationWithURLRequest(with stringURL: String,
                                               bodyRequestParameter: [String: Any]?,
                                               httpMethod: String,
@@ -19,6 +19,7 @@ class WebServicesManager: NSObject, WebServicesManagerInterface {
         var requestURL = URLRequest(url: URL(string: stringURL)!)
         requestURL.httpMethod = httpMethod
         
+        //MARK: Set Body Request Parameter
         if let dict = bodyRequestParameter {
             if let bodyData = try? JSONSerialization.data(withJSONObject: dict) {
                 requestURL.httpBody = bodyData

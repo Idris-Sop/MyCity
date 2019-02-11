@@ -19,7 +19,8 @@ class ShopViewModel {
         self.delegate = delegate
     }
     
-    func retreiveAllShopsFromCitySDK(in selectedMallModel: MallModel,
+    //MARK: Retrieve all Shops in a mall
+    func retrieveAllShopsFromCitySDK(in selectedMallModel: MallModel,
                                      selectedCityMdel: CityModel) {
         let citySDKManager = CitySDKManager()
         citySDKManager.fetchAllShops(inMall: selectedMallModel.mallName ?? "",
@@ -28,18 +29,19 @@ class ShopViewModel {
             self.shops = shopsModel
             self.delegate?.updateViewContent()
         }) { (error) in
-            print(error.localizedDescription)
+            self.delegate?.showErrorMessage(with: error.localizedDescription)
         }
     }
     
-    func retreiveAllShopsFromCitySDK(in cityName: String) {
+    //MARK: Retrieve all Shops in a city
+    func retrieveAllShopsFromCitySDK(in cityName: String) {
         let citySDKManager = CitySDKManager()
         citySDKManager.fetchAllShops(inCity: cityName,
                                     success: { (shopsModel) in
             self.shops = shopsModel
             self.delegate?.updateViewContent()
         }) { (error) in
-            print(error.localizedDescription)
+            self.delegate?.showErrorMessage(with: error.localizedDescription)
         }
     }
 }

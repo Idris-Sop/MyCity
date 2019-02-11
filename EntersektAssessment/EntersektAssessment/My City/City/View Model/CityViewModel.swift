@@ -26,7 +26,7 @@ class CityViewModel {
             self.cities = citiesModel
             self.delegate?.updateViewContent()
         }) { (error) in
-            print(error.localizedDescription)
+            self.delegate?.showErrorMessage(with: error.localizedDescription)
         }
     }
 }

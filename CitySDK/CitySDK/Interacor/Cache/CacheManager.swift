@@ -9,14 +9,18 @@
 import UIKit
 
 class CacheManager {
+    
+    //MARK: Private variable
     static let sharedInstance = CacheManager()
     private var cachedCityList: [CityModel]?
     
+    //MARK: Set Cities in the Cache
     func setCacheCity(_ cityToCache: [CityModel]) {
         cachedCityList = cityToCache
     }
     
-    func retreiveCachedCity() -> [CityModel]? {
+    //MARK: Retrieve Cities from the cache
+    func retrieveCachedCity() -> [CityModel]? {
         return cachedCityList
     }
 }

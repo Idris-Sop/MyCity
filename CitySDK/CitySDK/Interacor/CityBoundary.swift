@@ -13,6 +13,7 @@ typealias FetchCityFailureBlock = (_ error: NSError) -> Void
 
 protocol CityBoundary {
 
+    //MARK: Retrieve all Cities from API Endpoint Interface
     func fetchCities(with success: @escaping FetchCitySuccessBlock,
                      failure: @escaping FetchCityFailureBlock)
 }

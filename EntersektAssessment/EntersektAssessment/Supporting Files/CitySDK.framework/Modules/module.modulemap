@@ -1,0 +1,11 @@
+framework module CitySDK {
+  umbrella header "CitySDK.h"
+
+  export *
+  module * { export * }
+}
+
+module CitySDK.Swift {
+    header "CitySDK-Swift.h"
+    requires objc
+}

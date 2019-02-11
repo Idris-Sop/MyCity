@@ -10,17 +10,18 @@ import UIKit
 
 public class CitySDKManager: NSObject {
 
+    //MARK: Retrieve all cities 
     public func fetchAllCities(with success: @escaping ([CityModel]?) -> (),
                                failure: @escaping (NSError) -> ()) {
         let cityCacheDecorator = CacheDecorator()
         cityCacheDecorator.fetchCities(with: { (cityResponseModel) in
             success(cityResponseModel)
         }) { (error) in
-            print(error.localizedDescription)
             failure(error)
         }
     }
     
+    //MARK: Retrieve all Malls in a city
     public func fetchAllMalls(inCity cityName: String,
                               success: @escaping ([MallModel]?) -> (),
                               failure: @escaping (NSError) -> ()) {
@@ -34,11 +35,11 @@ public class CitySDKManager: NSObject {
             }
             success(mallList)
         }) { (error) in
-            print(error.localizedDescription)
             failure(error)
         }
     }
     
+    //MARK: Retrieve all Shops in a mall
     public func fetchAllShops(inMall mallName: String,
                               cityName: String,
                               success: @escaping ([ShopModel]?) -> (),
@@ -57,11 +58,11 @@ public class CitySDKManager: NSObject {
             }
             success(shopList)
         }) { (error) in
-            print(error.localizedDescription)
             failure(error)
         }
     }
     
+    //MARK: Retrieve all Shops in a city
     public func fetchAllShops(inCity cityName: String,
                               success: @escaping ([ShopModel]?) -> (),
                               failure: @escaping (NSError) -> ()) {
@@ -79,7 +80,6 @@ public class CitySDKManager: NSObject {
             }
             success(shopList)
         }) { (error) in
-            print(error.localizedDescription)
             failure(error)
         }
     }

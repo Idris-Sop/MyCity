@@ -10,6 +10,7 @@ import UIKit
 
 class CityInteractor: CityBoundary {
 
+    //MARK: Retrieve all Cities from API Endpoint
     func fetchCities(with success: @escaping FetchCitySuccessBlock,
                      failure: @escaping FetchCityFailureBlock) {
         let webServiceManager = WebServicesManager()

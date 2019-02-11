@@ -10,13 +10,15 @@ import UIKit
 
 public class ShopModel: NSObject {
 
-    public private(set) var cityId: Int?
+    //MARK: Public variable
     public private(set) var mallName: String?
     public private(set) var shopId: Int?
     public private(set) var shopName: String?
     
     init(dictionary: [String: Any],
          mallName: String) {
+        
+        // MARK: Assign values to variables
         self.mallName = mallName
         if let shopId = dictionary["id"] {
             self.shopId = shopId as? Int

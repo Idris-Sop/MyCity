@@ -13,6 +13,7 @@ typealias WebServiceManagerFailureBlock = (_ error: NSError) -> Void
 
 protocol WebServicesManagerInterface {
 
+    //MARK: Perform API Call Interface
     func performServerOperationWithURLRequest(with stringURL: String,
                                               bodyRequestParameter: [String: Any]?,
                                               httpMethod: String,

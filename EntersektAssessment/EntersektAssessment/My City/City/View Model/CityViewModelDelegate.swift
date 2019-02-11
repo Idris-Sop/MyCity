@@ -9,5 +9,8 @@
 import UIKit
 
 protocol CityViewModelDelegate {
+    
+    //MARK: Delegate Functions
     func updateViewContent()
+    func showErrorMessage(with message: String)
 }

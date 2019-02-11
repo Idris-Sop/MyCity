@@ -27,12 +27,13 @@ class ShopViewController: UIViewController, ShopViewModelDelegate {
         
         //MARK: Register TableView Cell
         self.shopTableView.register(UINib(nibName: "ShopTableViewCell", bundle: nil), forCellReuseIdentifier: "ShopCellIdentifier")
-        viewModel.retreiveAllShopsFromCitySDK(in: selectedMallModel!,
+        viewModel.retrieveAllShopsFromCitySDK(in: selectedMallModel!,
                                               selectedCityMdel: selectedCityModel!)
     }
     
+    //MARK: BarButtonItem Touch Listener
     @objc func barButtonTapped() {
-        viewModel.retreiveAllShopsFromCitySDK(in: self.selectedCityModel?.cityName ?? "")
+        viewModel.retrieveAllShopsFromCitySDK(in: self.selectedCityModel?.cityName ?? "")
     }
     
     func setShopList(with selectedMallModel: MallModel,
@@ -42,10 +43,18 @@ class ShopViewController: UIViewController, ShopViewModelDelegate {
         self.selectedCityModel = selectedCityMdel
     }
     
-    // MARK:
+    // MARK: ShopViewModelDelegate
     func updateViewContent() {
         self.shops = viewModel.shops
         self.shopTableView.reloadData()
+    }
+    
+    // MARK: ShopViewModelDelegate
+    func showErrorMessage(with message: String) {
+        let alertViewController = UIAlertController(title: "Error", message: message, preferredStyle: .alert)
+        let actionButton = UIAlertAction(title: "Ok", style: .cancel, handler: nil)
+        alertViewController.addAction(actionButton)
+        self.present(alertViewController, animated: true, completion: nil)
     }
 }
 
@@ -67,6 +76,7 @@ extension ShopViewController: UITableViewDelegate, UITableViewDataSource {
         return tableViewCell
     }
     
+    //MARK: UITableViewDelegate
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 80
     }

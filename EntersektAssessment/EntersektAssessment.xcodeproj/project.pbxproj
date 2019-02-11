@@ -14,8 +14,6 @@
 		D696861A220CAD1A00B1C1C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6968618220CAD1A00B1C1C0 /* LaunchScreen.storyboard */; };
 		D6968625220CAD1B00B1C1C0 /* EntersektAssessmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6968624220CAD1B00B1C1C0 /* EntersektAssessmentTests.swift */; };
 		D6968630220CAD1B00B1C1C0 /* EntersektAssessmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D696862F220CAD1B00B1C1C0 /* EntersektAssessmentUITests.swift */; };
-		D6968646220CAD3E00B1C1C0 /* CitySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6968643220CAD3500B1C1C0 /* CitySDK.framework */; };
-		D6968647220CAD3E00B1C1C0 /* CitySDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D6968643220CAD3500B1C1C0 /* CitySDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D69686D4220EFED400B1C1C0 /* CityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69686D3220EFED400B1C1C0 /* CityViewController.swift */; };
 		D69686D6220EFEE700B1C1C0 /* CityScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D69686D5220EFEE700B1C1C0 /* CityScreen.storyboard */; };
 		D69686D8220EFF3F00B1C1C0 /* CityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69686D7220EFF3F00B1C1C0 /* CityViewModel.swift */; };
@@ -31,6 +29,8 @@
 		D6F37D3A2210368A00B35A8C /* ShopTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6F37D382210368A00B35A8C /* ShopTableViewCell.xib */; };
 		D6F37D3D22103DDB00B35A8C /* ShopViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F37D3C22103DDB00B35A8C /* ShopViewModel.swift */; };
 		D6F37D3F22103DED00B35A8C /* ShopViewModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F37D3E22103DED00B35A8C /* ShopViewModelDelegate.swift */; };
+		D6FEEBD52210A4A0004A5459 /* CitySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6FEEBCA2210A176004A5459 /* CitySDK.framework */; };
+		D6FEEBD62210A4A0004A5459 /* CitySDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D6FEEBCA2210A176004A5459 /* CitySDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,23 +48,23 @@
 			remoteGlobalIDString = D696860B220CAD1A00B1C1C0;
 			remoteInfo = EntersektAssessment;
 		};
-		D6968642220CAD3500B1C1C0 /* PBXContainerItemProxy */ = {
+		D6FEEBD12210A48B004A5459 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D696863D220CAD3400B1C1C0 /* CitySDK.xcodeproj */;
+			containerPortal = D6FEEBCC2210A48B004A5459 /* CitySDK.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = D69685E5220CABE600B1C1C0;
 			remoteInfo = CitySDK;
 		};
-		D6968644220CAD3500B1C1C0 /* PBXContainerItemProxy */ = {
+		D6FEEBD32210A48B004A5459 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D696863D220CAD3400B1C1C0 /* CitySDK.xcodeproj */;
+			containerPortal = D6FEEBCC2210A48B004A5459 /* CitySDK.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = D69685EE220CABE600B1C1C0;
 			remoteInfo = CitySDKTests;
 		};
-		D6968648220CAD3E00B1C1C0 /* PBXContainerItemProxy */ = {
+		D6FEEBD72210A4AF004A5459 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D696863D220CAD3400B1C1C0 /* CitySDK.xcodeproj */;
+			containerPortal = D6FEEBCC2210A48B004A5459 /* CitySDK.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = D69685E4220CABE600B1C1C0;
 			remoteInfo = CitySDK;
@@ -78,7 +78,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				D6968647220CAD3E00B1C1C0 /* CitySDK.framework in Embed Frameworks */,
+				D6FEEBD62210A4A0004A5459 /* CitySDK.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -99,7 +99,6 @@
 		D696862B220CAD1B00B1C1C0 /* EntersektAssessmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EntersektAssessmentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D696862F220CAD1B00B1C1C0 /* EntersektAssessmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntersektAssessmentUITests.swift; sourceTree = "<group>"; };
 		D6968631220CAD1B00B1C1C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D696863D220CAD3400B1C1C0 /* CitySDK.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CitySDK.xcodeproj; path = ../CitySDK/CitySDK.xcodeproj; sourceTree = "<group>"; };
 		D69686D3220EFED400B1C1C0 /* CityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityViewController.swift; sourceTree = "<group>"; };
 		D69686D5220EFEE700B1C1C0 /* CityScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CityScreen.storyboard; sourceTree = "<group>"; };
 		D69686D7220EFF3F00B1C1C0 /* CityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityViewModel.swift; sourceTree = "<group>"; };
@@ -116,6 +115,8 @@
 		D6F37D382210368A00B35A8C /* ShopTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShopTableViewCell.xib; sourceTree = "<group>"; };
 		D6F37D3C22103DDB00B35A8C /* ShopViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopViewModel.swift; sourceTree = "<group>"; };
 		D6F37D3E22103DED00B35A8C /* ShopViewModelDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopViewModelDelegate.swift; sourceTree = "<group>"; };
+		D6FEEBCA2210A176004A5459 /* CitySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CitySDK.framework; sourceTree = "<group>"; };
+		D6FEEBCC2210A48B004A5459 /* CitySDK.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CitySDK.xcodeproj; path = ../CitySDK/CitySDK.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,7 +124,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D6968646220CAD3E00B1C1C0 /* CitySDK.framework in Frameworks */,
+				D6FEEBD52210A4A0004A5459 /* CitySDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -159,7 +160,7 @@
 		D6968603220CAD1A00B1C1C0 = {
 			isa = PBXGroup;
 			children = (
-				D696863D220CAD3400B1C1C0 /* CitySDK.xcodeproj */,
+				D6FEEBCC2210A48B004A5459 /* CitySDK.xcodeproj */,
 				D696860E220CAD1A00B1C1C0 /* EntersektAssessment */,
 				D6968623220CAD1B00B1C1C0 /* EntersektAssessmentTests */,
 				D696862E220CAD1B00B1C1C0 /* EntersektAssessmentUITests */,
@@ -206,15 +207,6 @@
 			path = EntersektAssessmentUITests;
 			sourceTree = "<group>";
 		};
-		D696863E220CAD3400B1C1C0 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				D6968643220CAD3500B1C1C0 /* CitySDK.framework */,
-				D6968645220CAD3500B1C1C0 /* CitySDKTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		D69686CF220EFEAA00B1C1C0 /* City */ = {
 			isa = PBXGroup;
 			children = (
@@ -245,6 +237,7 @@
 		D69686DB220F00C400B1C1C0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D6FEEBCA2210A176004A5459 /* CitySDK.framework */,
 				D696860F220CAD1A00B1C1C0 /* AppDelegate.swift */,
 				D6968616220CAD1A00B1C1C0 /* Assets.xcassets */,
 				D6968618220CAD1A00B1C1C0 /* LaunchScreen.storyboard */,
@@ -325,6 +318,15 @@
 			path = "View Model";
 			sourceTree = "<group>";
 		};
+		D6FEEBCD2210A48B004A5459 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D6FEEBD22210A48B004A5459 /* CitySDK.framework */,
+				D6FEEBD42210A48B004A5459 /* CitySDKTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -340,7 +342,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				D6968649220CAD3E00B1C1C0 /* PBXTargetDependency */,
+				D6FEEBD82210A4AF004A5459 /* PBXTargetDependency */,
 			);
 			name = EntersektAssessment;
 			productName = EntersektAssessment;
@@ -420,8 +422,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = D696863E220CAD3400B1C1C0 /* Products */;
-					ProjectRef = D696863D220CAD3400B1C1C0 /* CitySDK.xcodeproj */;
+					ProductGroup = D6FEEBCD2210A48B004A5459 /* Products */;
+					ProjectRef = D6FEEBCC2210A48B004A5459 /* CitySDK.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -434,18 +436,18 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		D6968643220CAD3500B1C1C0 /* CitySDK.framework */ = {
+		D6FEEBD22210A48B004A5459 /* CitySDK.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = CitySDK.framework;
-			remoteRef = D6968642220CAD3500B1C1C0 /* PBXContainerItemProxy */;
+			remoteRef = D6FEEBD12210A48B004A5459 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		D6968645220CAD3500B1C1C0 /* CitySDKTests.xctest */ = {
+		D6FEEBD42210A48B004A5459 /* CitySDKTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = CitySDKTests.xctest;
-			remoteRef = D6968644220CAD3500B1C1C0 /* PBXContainerItemProxy */;
+			remoteRef = D6FEEBD32210A48B004A5459 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -531,10 +533,10 @@
 			target = D696860B220CAD1A00B1C1C0 /* EntersektAssessment */;
 			targetProxy = D696862C220CAD1B00B1C1C0 /* PBXContainerItemProxy */;
 		};
-		D6968649220CAD3E00B1C1C0 /* PBXTargetDependency */ = {
+		D6FEEBD82210A4AF004A5459 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = CitySDK;
-			targetProxy = D6968648220CAD3E00B1C1C0 /* PBXContainerItemProxy */;
+			targetProxy = D6FEEBD72210A4AF004A5459 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -681,6 +683,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/EntersektAssessment/Supporting\\ Files",
+					"$(PROJECT_DIR)/EntersektAssessment/Supporting\\ Files",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/EntersektAssessment-Prefix.pch";
 				INFOPLIST_FILE = EntersektAssessment/Info.plist;
@@ -704,6 +711,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/EntersektAssessment/Supporting\\ Files",
+					"$(PROJECT_DIR)/EntersektAssessment/Supporting\\ Files",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/EntersektAssessment-Prefix.pch";
 				INFOPLIST_FILE = EntersektAssessment/Info.plist;

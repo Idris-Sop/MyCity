@@ -10,9 +10,10 @@ import UIKit
 
 class CacheDecorator: CityBoundary {
 
+    //MARK: Retrieve all Cities from Cache or from API Endpoint
     func fetchCities(with success: @escaping FetchCitySuccessBlock,
                      failure: @escaping FetchCityFailureBlock) {
-        if let cachedCities = CacheManager.sharedInstance.retreiveCachedCity() {
+        if let cachedCities = CacheManager.sharedInstance.retrieveCachedCity() {
             success(cachedCities)
         } else {
             let cityInteractor = CityInteractor()
