@@ -8,7 +8,7 @@
 
 import UIKit
 
-typealias GatewayCompletionBlock = (_ success: NSData, _ response: URLResponse, _ error: NSError?) -> Void
+typealias GatewayCompletionBlock = (_ success: NSData?, _ response: URLResponse?, _ error: NSError?) -> Void
 
 class Gateway: NSObject {
     
@@ -31,7 +31,7 @@ class Gateway: NSObject {
     func executeServerCommunicationWithURLRequest(with requestURL: URLRequest,
                                                   callBack: @escaping GatewayCompletionBlock) {
         let dataTask = session.dataTask(with: requestURL) { (data, responseURL, error) in
-            callBack(data! as NSData, responseURL!, error as NSError?)
+            callBack(data as NSData?, responseURL, error as NSError?)
         }
         dataTask.resume()
     }

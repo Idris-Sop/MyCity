@@ -30,13 +30,15 @@ class WebServicesManager: NSObject, WebServicesManagerInterface {
 
         let gateway = Gateway()
         gateway.executeServerCommunicationWithURLRequest(with: requestURL) { (data, response, error) in
-            let httpResponse = response as? HTTPURLResponse
-            if let statusCode = httpResponse?.statusCode {
+            if let httpResponse = response as? HTTPURLResponse {
+                let statusCode = httpResponse.statusCode
                 if statusCode == 200 {
-                    success(data)
+                    success(data!)
                 } else {
                     failure(error!)
                 }
+            } else {
+                failure(error!)
             }
         }
     }

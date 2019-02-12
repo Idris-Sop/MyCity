@@ -14,24 +14,26 @@ class CityInteractor: CityBoundary {
     func fetchCities(with success: @escaping FetchCitySuccessBlock,
                      failure: @escaping FetchCityFailureBlock) {
         let webServiceManager = WebServicesManager()
-        webServiceManager.performServerOperationWithURLRequest(with: API_ENDPOINT,
-                                                               bodyRequestParameter: nil,
-                                                               httpMethod: "GET",
-                                                               success: { (data) in
-                                                                do {
-                                                                    let jsonResponse = try JSONSerialization.jsonObject(with: data as Data, options: []) as! [String: Any]
-                                                                    print(jsonResponse)
-                                                                    var cityList = [CityModel]()
-                                                                    if let cityArray = jsonResponse["cities"] as? Array<Any> {
-                                                                        for (_, city) in ((cityArray).enumerated()) {
-                                                                            let cityResponseModel = CityModel(dictionary: city as! [String : Any])
-                                                                            cityList.append(cityResponseModel)
-                                                                        }
-                                                                    }
-                                                                    success(cityList)
-                                                                } catch  {
-                                                                    failure(error as NSError)
-                                                                }
+        webServiceManager
+            .performServerOperationWithURLRequest(with: "http://www.mocky.io/v2/5b7e8bc03000005c0084c210",
+                                                  bodyRequestParameter: nil,
+                                                  httpMethod: "GET",
+                                                   success: { (data) in
+                                                    do {
+                                                        let jsonResponse = try JSONSerialization.jsonObject(with: data as Data, options: []) as! [String: Any]
+                                                        print(jsonResponse)
+                                                        var cityList = [CityModel]()
+                                                        if let cityArray = jsonResponse["cities"] as? Array<Any> {
+                                                            for (_, city) in ((cityArray).enumerated()) {
+                                                                let cityResponseModel = CityModel(dictionary: city as! [String : Any])
+                                                                cityList.append(cityResponseModel)
+                                                            }
+                                                        }
+                                                        success(cityList)
+                                                    } catch  {
+                                                        let dataError = NSError(domain: "The data couldn’t be read due to technical problem.", code: 0, userInfo: nil)
+                                                        failure(dataError)
+                                                    }
         }) { (error) in
             failure(error)
         }
